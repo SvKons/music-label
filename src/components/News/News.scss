@@ -1,0 +1,59 @@
+.news{
+    display: flex;
+    justify-content: center;
+
+    
+
+    &__item{
+        width: 100%;
+        height: 650px;
+        border: 1px solid white;
+        position: relative;
+
+
+        &__button{
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            border-radius: 7%;
+            cursor: pointer;
+            background-color: transparent;
+            color: white;
+            margin: 10px 0 0 10px;
+        }
+        }
+
+    &__afisha{
+        
+        background-image: url(../../../public/img/afisha.JPG);
+        background-size: cover;
+        background-position: center;
+    }
+    &__news{
+        
+        background-image: url(../../../public/img/news.JPG);
+        background-size: cover;
+        background-position: center;
+    }
+    &__relise{
+        
+        background-image: url(../../../public/img/relise.JPG);
+        background-size: cover;
+        background-position: center;
+    }
+    
+}
+
+@media screen and (max-width: 769px) {
+    .news{
+        flex-wrap: wrap;
+    }
+
+  /* .news__item{
+        width: 300px;
+        height: 350px;
+    }*/
+
+
+    }
+

@@ -1,0 +1,30 @@
+.form{
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+
+
+    &__write{
+        font-family: "Josefin Sans", sans-serif;
+        margin-top: 30px;
+    }
+
+    &__text{
+        margin-top: 30px;
+        width: 700px;
+        height: 300px;
+        border-radius: 3%;
+        font-size: 16px;
+    }
+
+    &__button{
+        width: 100px;
+        height: 30px;
+        margin-top: 20px;
+        background-color: #6c0e6c;
+        color: white;
+        font-family: "Josefin Sans", sans-serif;
+        border-radius: 13px;
+    }
+}

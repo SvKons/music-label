@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    font-family: "Josefin Sans", sans-serif;
+    padding-top: 50px;
+    
+    
+    
+
+    &__contacts{
+        margin: 0 auto;
+        
+       &__con{
+        text-decoration: none;
+        color: white;
+       }
+    }
+
+    &__data{
+        margin: 0 auto;
+    }
+
+    &__socials{
+        margin: 0 auto;
+    }
+}
