@@ -1,0 +1,38 @@
+.top__section {
+    position: relative;
+    padding: 272px 16px 310px 16px;
+    font-family: 'Montserrat', sans-serif;
+
+    &__img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-image: url(./img/main.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    &__text {
+        font-size: 26px;
+        text-align: center;
+        font-weight: 300;
+    }
+
+    &__title {
+        font-size: 72px;
+        text-align: center;
+        font-weight: 600;
+    }
+}

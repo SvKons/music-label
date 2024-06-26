@@ -1,21 +1,21 @@
-import React from "react"
-import Header from "../../components/Header"
-import News from "../../components/News"
-import Footer from "../../components/Footer"
+import Header from '../../components/Header';
+import TopMenu from '../../components/TopMenu';
+import Releases from '../../components/Releases';
+import Footer from '../../components/Footer';
 import './MainPage.scss';
-
 
 const MainPage = () => {
     return (
-        <div className="container">
-     
-            <Header></Header>
-            <News></News>
-            <Footer></Footer>
-        
-        </div>
+        <div>
+            <Header />
+            <main className="main">
+                <TopMenu />
+                <Releases />
+            </main>
 
-    )
-}
+            <Footer />
+        </div>
+    );
+};
 
 export default MainPage;

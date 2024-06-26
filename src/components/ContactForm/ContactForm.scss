@@ -1,16 +1,15 @@
-.form{
+.form {
     width: 700px;
     height: 500px;
     margin: 0 auto;
     text-align: center;
 
-
-    &__write{
-        font-family: "Josefin Sans", sans-serif;
+    &__write {
+        font-family: 'Montserrat', sans-serif;
         margin-top: 30px;
     }
 
-    &__text{
+    &__text {
         margin-top: 30px;
         width: 700px;
         height: 300px;
@@ -18,13 +17,13 @@
         font-size: 16px;
     }
 
-    &__button{
+    &__button {
         width: 100px;
         height: 30px;
         margin-top: 20px;
         background-color: #6c0e6c;
         color: white;
-        font-family: "Josefin Sans", sans-serif;
+        font-family: 'Montserrat', sans-serif;
         border-radius: 13px;
     }
 }
