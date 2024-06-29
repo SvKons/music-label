@@ -7,6 +7,7 @@ import './reset.scss';
 import './App.scss';
 import Contacts from './pages/Contacts';
 import Artists from './pages/Artists';
+import Releases from './pages/Releases';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
@@ -22,6 +23,10 @@ const routes = createBrowserRouter([
     {
         path: 'artists',
         element: <Artists />,
+    },
+    {
+        path: 'releases',
+        element: <Releases />,
     },
 ]);
 

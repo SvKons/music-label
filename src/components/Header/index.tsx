@@ -22,7 +22,7 @@ const Header = () => {
                     <Link className="header__menu__span" to={'/artists'}>
                         <span>Артисты</span>
                     </Link>
-                    <Link className="header__menu__span" to={'/tracks'}>
+                    <Link className="header__menu__span" to={'/releases'}>
                         <span>Релизы</span>
                     </Link>
                     <Link className="header__menu__span" to={'/playlist'}>

@@ -1,0 +1,39 @@
+.pagination {
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__button {
+        font-size: 16px;
+        font-weight: 600;
+        width: 47px;
+        height: 40px;
+        background-color: #1b1c1e;
+        color: #fafafa;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+
+        &__active {
+            background-color: #ff6b00;
+        }
+
+        &:hover {
+            background-color: #ff6b00;
+        }
+    }
+    &__icon {
+        width: 20px;
+        height: 20px;
+        fill: #fff;
+        margin-right: 5px;
+
+        &__left {
+            transform: scaleX(-1);
+        }
+    }
+}
