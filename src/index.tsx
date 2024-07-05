@@ -8,6 +8,7 @@ import './App.scss';
 import Contacts from './pages/Contacts';
 import Artists from './pages/Artists';
 import Releases from './pages/Releases';
+import Playlists from './pages/Playlists';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
@@ -27,6 +28,10 @@ const routes = createBrowserRouter([
     {
         path: 'releases',
         element: <Releases />,
+    },
+    {
+        path: 'playlists',
+        element: <Playlists />,
     },
 ]);
 

@@ -1,4 +1,5 @@
 import Pagination from '../Pagination';
+import SearchForm from '../SearchForm';
 import './Releases.scss';
 
 const ReleasesPage = () => {
@@ -6,7 +7,7 @@ const ReleasesPage = () => {
         <>
             <div className="releases wrapper">
                 <div className="releases__wrap">
-                    <div className="releases__title">Избранные песни</div>
+                    <h2 className="releases__title">Избранные песни</h2>
                     <div className="releases__group">
                         <div className="releases__item">
                             <div className="releases__item__img">
@@ -53,12 +54,7 @@ const ReleasesPage = () => {
 
                 <div className="artists-wrap">
                     <div className="search">
-                        <form className="search__form">
-                            <input type="text" placeholder="Артисты, треки" className="nav__input" />
-                            <button className="search__form-button">
-                                <i className="search__form-button__icon"></i>
-                            </button>
-                        </form>
+                        <SearchForm />
                         <div className="search__filter">
                             <ul className="search__filter-list">
                                 <li className="search__filter-item">
