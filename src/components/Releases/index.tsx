@@ -1,54 +1,19 @@
 import Pagination from '../Pagination';
 import SearchForm from '../SearchForm';
 import './Releases.scss';
+import ReleasesLink from '../ReleasesLink/index';
+import { ReleasesList } from './utils';
 
-const ReleasesPage = () => {
+const Releases = () => {
     return (
         <>
             <div className="releases wrapper">
                 <div className="releases__wrap">
-                    <h2 className="releases__title">Избранные песни</h2>
+                    <div className="releases__title">Избранные песни</div>
                     <div className="releases__group">
-                        <div className="releases__item">
-                            <div className="releases__item__img">
-                                <div className="releases__item__like"></div>
-                            </div>
-                            <div className="releases__item__wrap">
-                                <span className="releases__item__title">Bassline Uprising</span>
-                                <span className="releases__item__time">03:20</span>
-                            </div>
-                            <span className="releases__item__author">Elysia Rayne, Jaxon Grey</span>
-                        </div>
-                        <div className="releases__item">
-                            <div className="releases__item__img">
-                                <div className="releases__item__like"></div>
-                            </div>
-                            <div className="releases__item__wrap">
-                                <span className="releases__item__title">Bassline Uprising</span>
-                                <span className="releases__item__time">03:20</span>
-                            </div>
-                            <span className="releases__item__author">Elysia Rayne, Jaxon Grey</span>
-                        </div>
-                        <div className="releases__item">
-                            <div className="releases__item__img">
-                                <div className="releases__item__like"></div>
-                            </div>
-                            <div className="releases__item__wrap">
-                                <span className="releases__item__title">Bassline Uprising</span>
-                                <span className="releases__item__time">03:20</span>
-                            </div>
-                            <span className="releases__item__author">Elysia Rayne, Jaxon Grey</span>
-                        </div>
-                        <div className="releases__item">
-                            <div className="releases__item__img">
-                                <div className="releases__item__like"></div>
-                            </div>
-                            <div className="releases__item__wrap">
-                                <span className="releases__item__title">Bassline Uprising</span>
-                                <span className="releases__item__time">03:20</span>
-                            </div>
-                            <span className="releases__item__author">Elysia Rayne, Jaxon Grey</span>
-                        </div>
+                        {ReleasesList.slice(0, 4).map((data, index) => {
+                            return <ReleasesLink key={index} data={data} />;
+                        })}
                     </div>
                 </div>
 
@@ -72,8 +37,8 @@ const ReleasesPage = () => {
 
                     <div className="cards">
                         <div className="card">
-                            <div className="card__img">
-                                <img src={require('./img/song_4.png')} alt="Девушка в наушниках" />
+                            <div className="card__img-wrap">
+                                <img className="card__img" src={require('./img/s-1.png')} />
                                 <div className="card__like"></div>
                             </div>
                             <div className="card__content">
@@ -85,8 +50,8 @@ const ReleasesPage = () => {
                             </div>
                         </div>
                         <div className="card">
-                            <div className="card__img">
-                                <img src={require('./img/song_4.png')} alt="Девушка в наушниках" />
+                            <div className="card__img-wrap">
+                                <img className="card__img" src={require('./img/s-1.png')} />
                                 <div className="card__like"></div>
                             </div>
                             <div className="card__content">
@@ -98,8 +63,8 @@ const ReleasesPage = () => {
                             </div>
                         </div>
                         <div className="card">
-                            <div className="card__img">
-                                <img src={require('./img/song_4.png')} alt="Девушка в наушниках" />
+                            <div className="card__img-wrap">
+                                <img className="card__img" src={require('./img/s-1.png')} />
                                 <div className="card__like"></div>
                             </div>
                             <div className="card__content">
@@ -111,8 +76,8 @@ const ReleasesPage = () => {
                             </div>
                         </div>
                         <div className="card">
-                            <div className="card__img">
-                                <img src={require('./img/song_4.png')} alt="Девушка в наушниках" />
+                            <div className="card__img-wrap">
+                                <img className="card__img" src={require('./img/s-1.png')} />
                                 <div className="card__like"></div>
                             </div>
                             <div className="card__content">
@@ -124,8 +89,8 @@ const ReleasesPage = () => {
                             </div>
                         </div>
                         <div className="card">
-                            <div className="card__img">
-                                <img src={require('./img/song_4.png')} alt="Девушка в наушниках" />
+                            <div className="card__img-wrap">
+                                <img className="card__img" src={require('./img/s-1.png')} />
                                 <div className="card__like"></div>
                             </div>
                             <div className="card__content">
@@ -137,8 +102,8 @@ const ReleasesPage = () => {
                             </div>
                         </div>
                         <div className="card">
-                            <div className="card__img">
-                                <img src={require('./img/song_4.png')} alt="Девушка в наушниках" />
+                            <div className="card__img-wrap">
+                                <img className="card__img" src={require('./img/s-1.png')} />
                                 <div className="card__like"></div>
                             </div>
                             <div className="card__content">
@@ -150,8 +115,8 @@ const ReleasesPage = () => {
                             </div>
                         </div>
                         <div className="card">
-                            <div className="card__img">
-                                <img src={require('./img/song_4.png')} alt="Девушка в наушниках" />
+                            <div className="card__img-wrap">
+                                <img className="card__img" src={require('./img/s-1.png')} />
                                 <div className="card__like"></div>
                             </div>
                             <div className="card__content">
@@ -163,8 +128,8 @@ const ReleasesPage = () => {
                             </div>
                         </div>
                         <div className="card">
-                            <div className="card__img">
-                                <img src={require('./img/song_4.png')} alt="Девушка в наушниках" />
+                            <div className="card__img-wrap">
+                                <img className="card__img" src={require('./img/s-1.png')} />
                                 <div className="card__like"></div>
                             </div>
                             <div className="card__content">
@@ -183,4 +148,4 @@ const ReleasesPage = () => {
     );
 };
 
-export default ReleasesPage;
+export default Releases;

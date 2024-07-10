@@ -1,15 +1,15 @@
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import PlaylistsPage from '../../components/PlaylistsPage';
+import Playlist from '../../components/Playlist';
 
-const Playlists = () => {
+const PlaylistPage = () => {
     return (
         <div>
             <Header></Header>
-            <PlaylistsPage></PlaylistsPage>
+            <Playlist></Playlist>
             <Footer></Footer>
         </div>
     );
 };
 
-export default Playlists;
+export default PlaylistPage;

@@ -1,6 +1,6 @@
-import './PlaylistsPage.scss';
+import './Playlist.scss';
 
-const PlaylistsPage = () => {
+const Playlist = () => {
     return (
         <>
             <div className="playlists wrapper">
@@ -347,4 +347,4 @@ const PlaylistsPage = () => {
     );
 };
 
-export default PlaylistsPage;
+export default Playlist;

@@ -1,15 +1,15 @@
 import Header from '../../components/Header';
-import ReleasesPage from '../../components/ReleasesPage';
 import Footer from '../../components/Footer';
+import Artists from '../../components/Artists';
 
-const Releases = () => {
+const ArtistsPage = () => {
     return (
         <div>
             <Header></Header>
-            <ReleasesPage></ReleasesPage>
+            <Artists></Artists>
             <Footer></Footer>
         </div>
     );
 };
 
-export default Releases;
+export default ArtistsPage;

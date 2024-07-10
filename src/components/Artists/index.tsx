@@ -1,8 +1,8 @@
 import Pagination from '../Pagination';
 import SearchForm from '../SearchForm';
-import './ArtistPage.scss';
+import './Artists.scss';
 
-const ArtistPage = () => {
+const Artists = () => {
     return (
         <>
             <div className="artists wrapper">
@@ -147,4 +147,4 @@ const ArtistPage = () => {
     );
 };
 
-export default ArtistPage;
+export default Artists;

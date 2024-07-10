@@ -6,6 +6,7 @@ $basic-font-size: 14px;
     padding: 100px 0px;
 
     &__wrap {
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -16,12 +17,12 @@ $basic-font-size: 14px;
     }
 
     &__title {
-        max-width: 400px;
-        font-size: 53px;
+        max-width: 300px;
+        font-size: 42px;
         font-weight: bold;
         line-height: 1.4;
         text-transform: uppercase;
-        margin-right: 10px;
+        margin-right: auto;
         position: relative;
     }
 
@@ -33,36 +34,52 @@ $basic-font-size: 14px;
 
     &__item {
         position: relative;
-        max-width: 233px;
-        min-height: 300px;
+        max-width: 250px;
+        min-width: 236px;
+        min-height: 324px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         gap: 15px;
-        padding: 16px 16px;
-        &__like {
-            position: absolute;
-            height: 50px;
-            width: 50px;
-            top: 5px;
-            right: 10px;
-            background-image: url(./img/like.png);
-            background-repeat: no-repeat;
-            background-size: cover;
+        padding: 20px 16px;
+
+        &__title {
+            font-weight: 600;
+            text-decoration: none;
+            color: #fff;
             cursor: pointer;
+            transition: color 0.2s linear;
+
+            &:hover {
+                color: #fd7e14;
+            }
         }
 
-        &__img {
+        &__icon {
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            top: 10px;
+            right: 13px;
+            padding: 5px;
+            cursor: pointer;
+            border-radius: 8px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 100%);
+            backdrop-filter: blur(10px);
+        }
+
+        &__img-wrap {
             position: absolute;
             height: 100%;
             width: 100%;
             top: 0;
             left: 0;
-            background-image: url(./img/song_1.png);
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 20px;
+        }
+
+        &__img {
+            height: 100%;
+            width: 100%;
+            border-radius: 30px;
         }
 
         &__wrap {
@@ -119,12 +136,12 @@ $basic-font-size: 14px;
 .cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 25px;
     margin-bottom: 60px;
 
     .card {
         position: relative;
-        max-width: 243px;
+        max-width: 219px;
         min-height: 360px;
         display: flex;
         flex-direction: column;
@@ -159,8 +176,12 @@ $basic-font-size: 14px;
             font-size: $basic-font-size;
         }
 
-        &__img {
+        &__img-wrap {
             position: relative;
+        }
+
+        &__img {
+            border-radius: 30px 30px 0px 0px;
         }
 
         &__like {
