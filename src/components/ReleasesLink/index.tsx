@@ -16,7 +16,6 @@ const ReleasesLink = ({ data }: ReleasesLinkProps) => {
                 {isImg && (
                     <div className="releases__item__img-wrap">
                         <img className="releases__item__img" src={data?.imgUrl} alt="Фото релиза" />
-
                         <img className="releases__item__icon" src={data?.iconImg} />
                     </div>
                 )}
