@@ -18,7 +18,9 @@
     },
     "scripts": {
         "start": "react-scripts start",
-        "build": "react-scripts build"
+        "build": "react-scripts build",
+        "build-docker": "docker build -t label . ",
+        "run": "docker run -p 80:80 label"
     },
     "eslintConfig": {
         "extends": [
