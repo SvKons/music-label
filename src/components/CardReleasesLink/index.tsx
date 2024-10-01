@@ -4,7 +4,7 @@ import { IReleasesCard } from '../../redux/Releases/types';
 
 interface CardReleasesLinkProps {
     data: IReleasesCard;
-    index: number; // получаем индекс
+    index: number;
 }
 
 const CardReleasesLink = ({ data, index }: CardReleasesLinkProps) => {
@@ -25,7 +25,7 @@ const CardReleasesLink = ({ data, index }: CardReleasesLinkProps) => {
             transition={{
                 duration: 0.7,
                 ease: 'easeInOut',
-                delay: index * 0.2,
+                delay: 0.3,
             }}
         >
             {isImg && (

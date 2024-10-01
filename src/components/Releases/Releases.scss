@@ -13,7 +13,7 @@ $basic-font-size: 14px;
         border-radius: 20px;
         background: linear-gradient(90deg, #1b1c1e 0.27%, rgba(43, 69, 81, 0.4) 71.25%);
         padding: 24px;
-        margin-bottom: 580px;
+        margin-bottom: 80px;
     }
 
     &__title {
@@ -106,28 +106,6 @@ $basic-font-size: 14px;
     justify-content: space-between;
     margin-bottom: 32px;
 
-    &__filter {
-        padding: 14px;
-        background: #1b1c1e;
-        border-radius: 15px;
-
-        &-list {
-            display: flex;
-        }
-
-        &-button {
-            border: none;
-            background-color: #1b1c1e;
-            color: #fafafa;
-            font-size: 16px;
-            font-weight: 600;
-            line-height: 150%;
-            padding: 5px 10px;
-            border-radius: 5px;
-            margin-bottom: 0;
-            cursor: pointer;
-        }
-    }
     .active {
         background-color: #ff6b00;
     }

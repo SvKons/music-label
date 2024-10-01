@@ -5,6 +5,7 @@ import SearchForm from '../SearchForm';
 import ReleasesLink from '../ReleasesLink/index';
 import { CardList, ReleasesList } from './utils';
 import CardReleasesLink from '../CardReleasesLink';
+import SearchFilter from '../SearchFilter';
 import './Releases.scss';
 
 const Releases = () => {
@@ -21,7 +22,7 @@ const Releases = () => {
                 transition={{
                     duration: 0.7,
                     ease: 'easeInOut',
-                    delay: 0.2,
+                    // delay: 0,
                 }}
             >
                 <div className="releases__title">Избранные песни</div>
@@ -35,19 +36,7 @@ const Releases = () => {
             <div className="artists-wrap">
                 <div className="search">
                     <SearchForm />
-                    <div className="search__filter">
-                        <ul className="search__filter-list">
-                            <li className="search__filter-item">
-                                <button className="search__filter-button active">Избранные</button>
-                            </li>
-                            <li className="search__filter-item">
-                                <button className="search__filter-button">Популярные</button>
-                            </li>
-                            <li className="search__filter-item">
-                                <button className="search__filter-button">Новые</button>
-                            </li>
-                        </ul>
-                    </div>
+                    <SearchFilter />
                 </div>
                 <div className="cards">
                     {CardList.slice(0, 18).map((data, index) => {
