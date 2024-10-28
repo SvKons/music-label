@@ -1,12 +1,12 @@
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import Playlist from '../../components/Playlist';
+import Playlists from '../../components/Playlists';
 
 const PlaylistPage = () => {
     return (
         <div>
             <Header></Header>
-            <Playlist></Playlist>
+            <Playlists></Playlists>
             <Footer></Footer>
         </div>
     );
