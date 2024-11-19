@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion';
-import { IArtists } from '../../redux/Artists/types';
 import { useRef } from 'react';
+import { IArtists } from '../../../redux/Artists/types';
 
 interface ArtistsLinkProps {
     data: IArtists;

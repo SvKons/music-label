@@ -2,11 +2,11 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import Pagination from '../Pagination';
 import SearchForm from '../SearchForm';
-import ReleasesLink from '../ReleasesLink/index';
+import ReleasesLink from './ReleasesLink/index';
 import { CardList, ReleasesList } from './utils';
-import CardReleasesLink from '../CardReleasesLink';
 import SearchFilter from '../SearchFilter';
 import './Releases.scss';
+import CardReleasesLink from './CardReleasesLink';
 
 const Releases = () => {
     const ref = useRef(null);

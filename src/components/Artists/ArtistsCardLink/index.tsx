@@ -1,5 +1,5 @@
 import { motion, useInView } from 'framer-motion';
-import { IArtistsCard } from '../../redux/Artists/types';
+import { IArtistsCard } from '../../../redux/Artists/types';
 import { useRef } from 'react';
 
 interface ArtistsCardLinkProps {

@@ -1,4 +1,4 @@
-import { IMyPlaylists } from '../../redux/MyPlaylists/types';
+import { IMyPlaylists } from '../../../redux/MyPlaylists/types';
 
 export const MyPlaylists: IMyPlaylists[] = [
     {

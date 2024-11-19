@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { IPlaylistSong } from '../../redux/Playlist/types';
+import { IPlaylistSong } from '../../../redux/Playlist/types';
 
 interface PlaylistLinkProps {
     data: IPlaylistSong;

@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { IMyPlaylists } from '../../redux/MyPlaylists/types';
 import { Link } from 'react-router-dom';
+import { IMyPlaylists } from '../../../redux/MyPlaylists/types';
 
 interface MyPlaylistsLinkProps {
     data: IMyPlaylists;

@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { IReleasesCard } from '../../redux/Releases/types';
+import { IReleasesCard } from '../../../redux/Releases/types';
 
 interface CardReleasesLinkProps {
     data: IReleasesCard;

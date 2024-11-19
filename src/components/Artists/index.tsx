@@ -5,8 +5,8 @@ import SearchForm from '../SearchForm';
 import './Artists.scss';
 import { motion, useInView } from 'framer-motion';
 import { ArtistsCard, ArtistsList } from './utils';
-import ArtistsLink from '../ArtistsLink';
-import ArtistsCardLink from '../ArtistsCardLink';
+import ArtistsCardLink from './ArtistsCardLink';
+import ArtistsLink from './ArtistsLink';
 
 const Artists = () => {
     const ref = useRef(null);

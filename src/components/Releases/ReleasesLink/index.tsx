@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { IReleases } from '../../redux/Releases/types';
+import { IReleases } from '../../../redux/Releases/types';
 
 interface ReleasesLinkProps {
     data: IReleases;

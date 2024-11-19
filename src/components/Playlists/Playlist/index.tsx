@@ -1,6 +1,6 @@
-import PlaylistLink from '../PlaylistLink';
 import { PlaylistSong } from './utils';
 import './Playlist.scss';
+import PlaylistLink from '../PlaylistLink';
 
 const Playlist = () => {
     return (

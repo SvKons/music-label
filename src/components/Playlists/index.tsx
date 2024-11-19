@@ -1,5 +1,5 @@
-import MyPlaylists from '../MyPlaylists';
-import Playlist from '../Playlist';
+import MyPlaylists from './MyPlaylists';
+import Playlist from './Playlist';
 import './Playlists.scss';
 
 const Playlists = () => {
