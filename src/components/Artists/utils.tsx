@@ -32,7 +32,7 @@ export const ArtistsCard: IArtistsCard[] = [
         url: 'https://demo.templatemonster.com/ru/demo/349984.html',
         author: 'Mia Anderson',
         title: 'Pop Artist',
-        imgUrl: require('./img/a-1.png'),
+        imgUrl: require('./img/Image-1.png'),
     },
     {
         url: 'https://demo.templatemonster.com/ru/demo/349984.html',

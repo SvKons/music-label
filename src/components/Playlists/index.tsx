@@ -1,5 +1,7 @@
+import Card from '../Card';
 import MyPlaylists from './MyPlaylists';
 import Playlist from './Playlist';
+import { playlistsData } from './utils';
 import './Playlists.scss';
 
 const Playlists = () => {
@@ -32,92 +34,19 @@ const Playlists = () => {
                         </div>
                     </div>
 
-                    <div className="playlists__played__list">
-                        <div className="playlists__played__wrap">
-                            <div className="playlists__played__toggle-wrap">
-                                <div className="playlists__played__card">
-                                    <div className="playlists__played__img-block">
-                                        <img src={require('./img/img5.png')} alt="Фото Артиста" className="playlists__played__img" />
-                                        <div className="playlists__played__icon"></div>
-                                    </div>
-                                    <div className="playlists__played__info-block">
-                                        <div className="playlists__played__info">
-                                            <span className="playlists__played__genre">Rhyme Revolution</span>
-                                            <span className="playlists__played__time">03:20</span>
-                                        </div>
-                                        <span className="playlists__played__authot">Elysia Rayne, Jaxon Grey</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="playlists__played__wrap">
-                            <div className="playlists__played__toggle-wrap">
-                                <div className="playlists__played__card">
-                                    <div className="playlists__played__img-block">
-                                        <img src={require('./img/img5.png')} alt="Фото Артиста" className="playlists__played__img" />
-                                        <div className="playlists__played__icon"></div>
-                                    </div>
-                                    <div className="playlists__played__info-block">
-                                        <div className="playlists__played__info">
-                                            <span className="playlists__played__genre">Rhyme Revolution</span>
-                                            <span className="playlists__played__time">03:20</span>
-                                        </div>
-                                        <span className="playlists__played__authot">Elysia Rayne, Jaxon Grey</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="playlists__played__wrap">
-                            <div className="playlists__played__toggle-wrap">
-                                <div className="playlists__played__card">
-                                    <div className="playlists__played__img-block">
-                                        <img src={require('./img/img5.png')} alt="Фото Артиста" className="playlists__played__img" />
-                                        <div className="playlists__played__icon"></div>
-                                    </div>
-                                    <div className="playlists__played__info-block">
-                                        <div className="playlists__played__info">
-                                            <span className="playlists__played__genre">Rhyme Revolution</span>
-                                            <span className="playlists__played__time">03:20</span>
-                                        </div>
-                                        <span className="playlists__played__authot">Elysia Rayne, Jaxon Grey</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="playlists__played__wrap">
-                            <div className="playlists__played__toggle-wrap">
-                                <div className="playlists__played__card">
-                                    <div className="playlists__played__img-block">
-                                        <img src={require('./img/img5.png')} alt="Фото Артиста" className="playlists__played__img" />
-                                        <div className="playlists__played__icon"></div>
-                                    </div>
-                                    <div className="playlists__played__info-block">
-                                        <div className="playlists__played__info">
-                                            <span className="playlists__played__genre">Rhyme Revolution</span>
-                                            <span className="playlists__played__time">03:20</span>
-                                        </div>
-                                        <span className="playlists__played__authot">Elysia Rayne, Jaxon Grey</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="playlists__played__wrap">
-                            <div className="playlists__played__toggle-wrap">
-                                <div className="playlists__played__card">
-                                    <div className="playlists__played__img-block">
-                                        <img src={require('./img/img5.png')} alt="Фото Артиста" className="playlists__played__img" />
-                                        <div className="playlists__played__icon"></div>
-                                    </div>
-                                    <div className="playlists__played__info-block">
-                                        <div className="playlists__played__info">
-                                            <span className="playlists__played__genre">Rhyme Revolution</span>
-                                            <span className="playlists__played__time">03:20</span>
-                                        </div>
-                                        <span className="playlists__played__authot">Elysia Rayne, Jaxon Grey</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div className="played-list">
+                        {playlistsData.map(playlist => (
+                            <Card
+                                key={playlist.id}
+                                id={''}
+                                imgUrl={playlist.imgUrl}
+                                url={playlist.url || '#'}
+                                time={playlist.time}
+                                author={playlist.author}
+                                title={playlist.title}
+                                className="card-song__width"
+                            />
+                        ))}
                     </div>
                 </div>
             </div>

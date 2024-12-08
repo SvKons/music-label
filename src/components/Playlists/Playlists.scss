@@ -158,59 +158,11 @@
         &__arrow-right::before {
             transform: translate(-50%, -50%) rotate(45deg);
         }
-
-        &__list {
-            position: relative;
-            display: flex;
-            gap: 57px;
-        }
-
-        &__card {
-            position: relative;
-            max-width: 243px;
-            min-height: 360px;
-            display: flex;
-            flex-direction: column;
-            border-radius: 31px;
-            overflow: hidden;
-        }
-
-        &__img-block {
-            position: relative;
-        }
-
-        &__img {
-            position: relative;
-            display: block;
-        }
-
-        &__icon {
-            position: absolute;
-            height: 50px;
-            width: 50px;
-            top: 5px;
-            right: 10px;
-            background-image: url(../Playlists/img/like.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            cursor: pointer;
-        }
-
-        &__info-block {
-            font-size: 14px;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            padding: 24px 16px;
-            border-radius: 0 0 30px 30px;
-            background: linear-gradient(180deg, rgba(27, 28, 30, 0.8) 0%, rgba(27, 28, 30, 0.48) 100%);
-            backdrop-filter: blur(10px);
-        }
-
-        &__info {
-            display: flex;
-            justify-content: space-between;
-        }
     }
+}
+
+.played-list {
+    position: relative;
+    display: flex;
+    gap: 57px;
 }

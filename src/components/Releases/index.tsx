@@ -2,11 +2,10 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import Pagination from '../Pagination';
 import SearchForm from '../SearchForm';
-import ReleasesLink from './ReleasesLink/index';
-import { CardList, ReleasesList } from './utils';
+import { сardList, releasesList } from './utils';
 import SearchFilter from '../SearchFilter';
 import './Releases.scss';
-import CardReleasesLink from './CardReleasesLink';
+import Card from '../Card';
 
 const Releases = () => {
     const ref = useRef(null);
@@ -27,8 +26,19 @@ const Releases = () => {
             >
                 <div className="releases__title">Избранные песни</div>
                 <div className="releases__group">
-                    {ReleasesList.slice(0, 4).map((data, index) => {
-                        return <ReleasesLink key={index} data={data} />;
+                    {releasesList.slice(0, 4).map(selected => {
+                        return (
+                            <Card
+                                key={selected.id}
+                                id={''}
+                                imgUrl={selected.imgUrl}
+                                url={selected.url}
+                                title={selected.title}
+                                time={selected.time}
+                                author={selected.author}
+                                className="card-song__width"
+                            />
+                        );
                     })}
                 </div>
             </motion.div>
@@ -39,8 +49,18 @@ const Releases = () => {
                     <SearchFilter />
                 </div>
                 <div className="cards">
-                    {CardList.slice(0, 18).map((data, index) => {
-                        return <CardReleasesLink key={index} data={data} index={0} />;
+                    {сardList.slice(0, 18).map(release => {
+                        return (
+                            <Card
+                                key={release.id}
+                                id={''}
+                                imgUrl={release.imgUrl}
+                                url={release.url}
+                                title={release.title}
+                                time={release.time}
+                                author={release.author}
+                            />
+                        );
                     })}
                 </div>
                 <Pagination />

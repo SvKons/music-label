@@ -1,12 +1,9 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { IReleases } from '../../../redux/Releases/types';
 
-interface ReleasesLinkProps {
-    data: IReleases;
-}
+import './ReleasesLink.scss';
 
-const ReleasesLink = ({ data }: ReleasesLinkProps) => {
+const ReleasesLink = ({ data }: any) => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
 
@@ -17,7 +14,7 @@ const ReleasesLink = ({ data }: ReleasesLinkProps) => {
 
     return (
         <motion.div
-            className="card"
+            className="releases-card"
             ref={ref}
             initial={{ opacity: 0, y: -20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -27,22 +24,22 @@ const ReleasesLink = ({ data }: ReleasesLinkProps) => {
                 delay: 0.2,
             }}
         >
-            <div className="releases__item">
+            <div className="releases-card__item">
                 {isImg && (
-                    <div className="releases__item__img-wrap">
-                        <img className="releases__item__img" src={data?.imgUrl} alt="Фото релиза" />
-                        <img className="releases__item__icon" src={data?.iconImg} alt="Иконка" />
+                    <div className="releases-card__item__img-wrap">
+                        <img className="releases-card__item__img" src={data?.imgUrl} alt="Фото релиза" />
+                        <img className="releases-card__item__icon" src={data?.iconImg} alt="Иконка" />
                     </div>
                 )}
-                <div className="releases__item__wrap">
+                <div className="releases-card__item__wrap">
                     {isTitle && (
-                        <a href={data?.url} className="releases__item__title">
+                        <a href={data?.url} className="releases-card__item__title">
                             {data?.title}
                         </a>
                     )}
-                    {isTime && <span className="releases__item__time">{data?.time}</span>}
+                    {isTime && <span className="releases-card__item__time">{data?.time}</span>}
                 </div>
-                {isAuthor && <span className="releases__item__author">{data?.author}</span>}
+                {isAuthor && <span className="releases-card__item__author">{data?.author}</span>}
             </div>
         </motion.div>
     );
