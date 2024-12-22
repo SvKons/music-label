@@ -37,6 +37,7 @@ const Releases = () => {
                                 time={selected.time}
                                 author={selected.author}
                                 className="card-song__width"
+                                infoBlockClassName="card-song__bottom-info"
                             />
                         );
                     })}

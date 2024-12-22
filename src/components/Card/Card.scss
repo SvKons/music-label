@@ -47,7 +47,7 @@
     }
 
     &__info-block {
-        font-size: 14px;
+        font-size: 0.875rem;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -62,5 +62,11 @@
     &__info {
         display: flex;
         justify-content: space-between;
+    }
+
+    &__bottom-info {
+        margin-top: -88px;
+        background: none;
+        backdrop-filter: blur(2px);
     }
 }

@@ -10,7 +10,7 @@ const Header = () => {
                     <img className="header__logo__img" src={require('./img/logo.png')} width={82} alt="Logo" />
                 </Link>
                 <div className="header__menu">
-                    <Link className="header__menu__span" to={'/about'}>
+                    <Link className="header__menu__span" to={'/'}>
                         <span>О нас</span>
                     </Link>
                     <Link className="header__menu__span" to={'/news'}>

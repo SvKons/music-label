@@ -1,0 +1,52 @@
+.trending-album {
+    max-width: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    &__top-info {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    &__img {
+        border-radius: 30px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    &__genre {
+        font-size: 1.875rem;
+        font-weight: bold;
+    }
+
+    &__author {
+        font-size: 1.5rem;
+        color: var(--orange);
+        text-decoration: none;
+    }
+
+    &__count-info {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__btn {
+        align-self: flex-start;
+        color: var(--white);
+        background-color: var(--orange);
+
+        &:hover {
+            color: var(--black);
+            background-color: var(--white);
+        }
+    }
+}

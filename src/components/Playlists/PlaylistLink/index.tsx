@@ -2,11 +2,11 @@ import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { IPlaylistSong } from '../../../redux/Playlist/types';
 
-interface PlaylistLinkProps {
+export interface IPlaylistLinkProps {
     data: IPlaylistSong;
 }
 
-const PlaylistLink = ({ data }: PlaylistLinkProps) => {
+const PlaylistLink = ({ data }: IPlaylistLinkProps) => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
 
@@ -19,7 +19,7 @@ const PlaylistLink = ({ data }: PlaylistLinkProps) => {
 
     return (
         <motion.div
-            className="added-playlist__song-item"
+            className="added__song-item"
             ref={ref}
             initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -29,23 +29,23 @@ const PlaylistLink = ({ data }: PlaylistLinkProps) => {
                 delay: 0.4,
             }}
         >
-            <div className="added-playlist__title-block">
+            <div className="added__title-block">
                 {isImg && <img src={data?.imgUrl} alt="" />}
 
-                <div className="added-playlist__text">
-                    {isTitle && <span className="added-playlist__name-song">{data?.title}</span>}
-                    {isAuthor && <span className="added-playlist__name-artist">{data?.author}</span>}
+                <div className="added__text">
+                    {isTitle && <span className="added__name-song">{data?.title}</span>}
+                    {isAuthor && <span className="added__name-artist">{data?.author}</span>}
                 </div>
             </div>
-            <div className="added-playlist__info-block">
-                {isTime && <span className="added-playlist__time-song">{data?.time}</span>}
+            <div className="added__info-block">
+                {isTime && <span className="added__time-song">{data?.time}</span>}
                 {isIconPlay && (
-                    <button className="added-playlist__play-icon">
+                    <button className="added__play-icon">
                         <img src={data?.iconPlay} alt="Иконка плэй" />
                     </button>
                 )}
                 {isIconLike && (
-                    <div className="added-playlist__icon-like">
+                    <div className="added__icon-like">
                         <img src={data?.iconLike} alt="Иконка лайка" />
                     </div>
                 )}

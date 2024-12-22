@@ -33,10 +33,10 @@
         left: 0;
         padding: 16px;
         text-decoration: none;
-        color: #fff;
+        color: var(--white);
 
         &:hover {
-            color: #ff6b00;
+            color: var(--orange);
         }
     }
 
@@ -70,7 +70,7 @@
     padding: 100px 0px;
 
     &__title {
-        font-size: 30px;
+        font-size: 1.875rem;
         font-weight: bold;
         line-height: 1.4;
         margin-bottom: 20px;
@@ -108,7 +108,7 @@
         }
 
         &__title {
-            font-size: 30px;
+            font-size: 1.875rem;
             font-weight: bold;
             line-height: 1.4;
             margin-bottom: 20px;
@@ -139,15 +139,15 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                border-top: 2px solid #fff;
-                border-right: 2px solid #fff;
+                border-top: 2px solid var(--white);
+                border-right: 2px solid var(--white);
                 width: 6px;
                 height: 6px;
             }
 
             &:hover::before {
-                border-top: 2px solid #ff6b00;
-                border-right: 2px solid #ff6b00;
+                border-top: 2px solid var(--orange);
+                border-right: 2px solid var(--orange);
             }
         }
 
@@ -165,4 +165,36 @@
     position: relative;
     display: flex;
     gap: 57px;
+}
+
+.added-playlist {
+    width: 50%;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 30px;
+    }
+
+    &__tracks {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__link {
+        cursor: pointer;
+        padding: 8px;
+        padding-top: 5px;
+        border-radius: 8px;
+        background: rgba(185, 191, 202, 0.4);
+        backdrop-filter: blur(10px);
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+    }
 }

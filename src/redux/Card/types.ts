@@ -6,4 +6,5 @@ export interface ICardData {
     time: string;
     author: string;
     className?: string;
+    infoBlockClassName?: string;
 }

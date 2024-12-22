@@ -1,19 +1,7 @@
-.top__section {
+.top-section {
     position: relative;
-    padding: 272px 16px 310px 16px;
-    font-family: 'Montserrat', sans-serif;
-
-    &__img {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        background-image: url(./img/main.jpg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+    padding-top: 160px;
+    margin-bottom: 100px;
 
     &__content {
         display: flex;
@@ -24,15 +12,139 @@
         margin: 0 auto;
     }
 
-    &__text {
-        font-size: 26px;
-        text-align: center;
-        font-weight: 300;
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
     }
 
-    &__title {
-        font-size: 72px;
-        text-align: center;
-        font-weight: 600;
+    &__main-img {
+        border-radius: 20px;
+    }
+
+    &__main-title {
+        font-size: 3.75rem;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    &__block-content {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1), 11px 12px 36px 0px rgba(0, 0, 0, 0.1), 42px 49px 65px 0px rgba(0, 0, 0, 0.09),
+            95px 111px 88px 0px rgba(0, 0, 0, 0.05), 170px 198px 104px 0px rgba(0, 0, 0, 0.01), 265px 309px 114px 0px rgba(0, 0, 0, 0);
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 100%);
+        padding: 10px 15px;
+
+        &_album {
+            flex-direction: column;
+        }
+    }
+
+    &__artist-description {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 10px;
+    }
+
+    &__artist-link {
+        font-weight: bold;
+        font-size: 1.25rem;
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease-in;
+
+        &:hover {
+            color: #ff6b00;
+        }
+    }
+
+    &__info-album {
+        width: 33%;
+    }
+
+    &__info-block {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    &__bottom-info {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    &__time-info {
+        display: inline-block;
+        border-radius: 20px;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1), 11px 12px 36px 0px rgba(0, 0, 0, 0.1), 42px 49px 65px 0px rgba(0, 0, 0, 0.09),
+            95px 111px 88px 0px rgba(0, 0, 0, 0.05), 170px 198px 104px 0px rgba(0, 0, 0, 0.01), 265px 309px 114px 0px rgba(0, 0, 0, 0);
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 100%);
+        padding: 10px 15px;
+        margin-bottom: 30px;
+    }
+
+    &__next-info {
+        margin-bottom: 30px;
+    }
+
+    &__details {
+        display: flex;
+        justify-content: flex-start;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    &__genre,
+    &__date,
+    &__next-info {
+        font-size: 1.375rem;
+    }
+
+    &__genre {
+        color: #ff6b00;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 15px;
+    }
+
+    &__btn {
+        &_play {
+            color: white;
+            background-color: #ff6b00;
+
+            &:hover {
+                color: black;
+                background-color: white;
+            }
+        }
+
+        &_add,
+        &_settings {
+            color: black;
+            background-color: white;
+
+            &:hover {
+                color: white;
+                background-color: #ff6b00;
+            }
+        }
+
+        &_settings {
+            background: #fafafa;
+            padding: 19px 27px;
+            color: black;
+            font-size: 1.25rem;
+            cursor: pointer;
+        }
     }
 }

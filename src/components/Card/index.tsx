@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { ICardData } from '../../redux/Card/types';
 import './Card.scss';
 
-const Card = ({ imgUrl, title, time, author, className }: ICardData) => {
+const Card = ({ imgUrl, title, time, author, className, infoBlockClassName }: ICardData) => {
     return (
         <motion.div
             className={`card-song ${className || ''}`}
@@ -19,7 +19,7 @@ const Card = ({ imgUrl, title, time, author, className }: ICardData) => {
                     <img src={imgUrl} alt="Фото Артиста" className="card-song__img" />
                     <div className="card-song__icon"></div>
                 </div>
-                <div className="card-song__info-block">
+                <div className={`card-song__info-block ${infoBlockClassName || ''}`}>
                     <div className="card-song__info">
                         <span className="card-song__genre">{title}</span>
                         <span className="card-song__tiem">{time}</span>

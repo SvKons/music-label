@@ -2,7 +2,9 @@ import Card from '../Card';
 import MyPlaylists from './MyPlaylists';
 import Playlist from './Playlist';
 import { playlistsData } from './utils';
+import { PlaylistSong } from './Playlist/utils';
 import './Playlists.scss';
+import { Link } from 'react-router-dom';
 
 const Playlists = () => {
     return (
@@ -15,13 +17,26 @@ const Playlists = () => {
                             <div className="group-playlists__list">
                                 <MyPlaylists />
                                 <div className="group-playlists__item group-playlists__plus">
-                                    <a href="" className="group-playlists__link group-playlists__link_plus">
+                                    <Link to="#" className="group-playlists__link group-playlists__link_plus">
                                         <img src={require('./img/plus.png')} className="group-playlists__icon"></img>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
-                        <Playlist />
+                        <div className="added-playlist">
+                            <Playlist playlistData={PlaylistSong}>
+                                <div className="added-playlist__top">
+                                    <div className="added-playlist__tracks">
+                                        <span className="added-playlist__name-playlist">Party Playlist</span>
+                                        <span className="added-playlist__count-track">15 Треков</span>
+                                    </div>
+
+                                    <Link to="#" className="added-playlist__link">
+                                        <img src={require('./img/plus.png')} className="added-playlist__icon" alt="Plus Icon" />
+                                    </Link>
+                                </div>
+                            </Playlist>
+                        </div>
                     </div>
                 </div>
                 <div className="playlists__played">
