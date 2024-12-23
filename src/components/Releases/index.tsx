@@ -2,10 +2,12 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import Pagination from '../Pagination';
 import SearchForm from '../SearchForm';
-import { сardList, releasesList } from './utils';
 import SearchFilter from '../SearchFilter';
 import './Releases.scss';
 import Card from '../Card';
+import { releasesList } from '../CardFeatured/utils';
+import CardFeatured from '../CardFeatured';
+import { cardList } from '../Card/utils';
 
 const Releases = () => {
     const ref = useRef(null);
@@ -14,7 +16,7 @@ const Releases = () => {
     return (
         <div className="releases wrapper">
             <motion.div
-                className="releases__wrap"
+                className="featured-song"
                 ref={ref}
                 initial={{ opacity: 0, y: -20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -24,22 +26,10 @@ const Releases = () => {
                     // delay: 0,
                 }}
             >
-                <div className="releases__title">Избранные песни</div>
-                <div className="releases__group">
+                <div className="featured-song__title">Избранные песни</div>
+                <div className="featured-song__group">
                     {releasesList.slice(0, 4).map(selected => {
-                        return (
-                            <Card
-                                key={selected.id}
-                                id={''}
-                                imgUrl={selected.imgUrl}
-                                url={selected.url}
-                                title={selected.title}
-                                time={selected.time}
-                                author={selected.author}
-                                className="card-song__width"
-                                infoBlockClassName="card-song__bottom-info"
-                            />
-                        );
+                        return <CardFeatured key={selected.id} data={selected} />;
                     })}
                 </div>
             </motion.div>
@@ -50,18 +40,8 @@ const Releases = () => {
                     <SearchFilter />
                 </div>
                 <div className="cards">
-                    {сardList.slice(0, 18).map(release => {
-                        return (
-                            <Card
-                                key={release.id}
-                                id={''}
-                                imgUrl={release.imgUrl}
-                                url={release.url}
-                                title={release.title}
-                                time={release.time}
-                                author={release.author}
-                            />
-                        );
+                    {cardList.slice(0, 18).map(release => {
+                        return <Card key={release.id} data={release} />;
                     })}
                 </div>
                 <Pagination />

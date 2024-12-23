@@ -1,0 +1,74 @@
+.featured-card {
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &__item {
+        position: relative;
+        max-width: 250px;
+        min-width: 236px;
+        min-height: 324px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 15px;
+        padding: 20px 16px;
+    }
+
+    &__title {
+        font-weight: 600;
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer;
+        transition: color 0.2s linear;
+
+        &:hover {
+            color: #fd7e14;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        top: 10px;
+        right: 13px;
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 8px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 100%);
+        backdrop-filter: blur(10px);
+    }
+
+    &__img-wrap {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    &__wrap,
+    &__author {
+        position: relative;
+    }
+
+    &__title,
+    &__time,
+    &__author {
+        font-size: 0.875rem;
+    }
+}

@@ -2,34 +2,6 @@
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     padding: 100px 0px;
-
-    &__wrap {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 20px;
-        background: linear-gradient(90deg, #1b1c1e 0.27%, rgba(43, 69, 81, 0.4) 71.25%);
-        padding: 24px;
-        margin-bottom: 80px;
-    }
-
-    &__title {
-        max-width: 300px;
-        font-size: 2.625rem;
-        font-weight: bold;
-        line-height: 1.4;
-        text-transform: uppercase;
-        margin-right: auto;
-        position: relative;
-    }
-
-    &__group {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
 }
 
 .search {
@@ -47,4 +19,32 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 60px;
+}
+
+.featured-song {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #1b1c1e 0.27%, rgba(43, 69, 81, 0.4) 71.25%);
+    padding: 24px;
+    margin-bottom: 80px;
+
+    &__title {
+        max-width: 300px;
+        font-size: 2.625rem;
+        font-weight: bold;
+        line-height: 1.4;
+        text-transform: uppercase;
+        margin-right: auto;
+        position: relative;
+    }
+
+    &__group {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 }

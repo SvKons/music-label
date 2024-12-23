@@ -51,16 +51,7 @@ const Playlists = () => {
 
                     <div className="played-list">
                         {playlistsData.map(playlist => (
-                            <Card
-                                key={playlist.id}
-                                id={''}
-                                imgUrl={playlist.imgUrl}
-                                url={playlist.url || '#'}
-                                time={playlist.time}
-                                author={playlist.author}
-                                title={playlist.title}
-                                className="card-song__width"
-                            />
+                            <Card key={playlist.id} data={playlist} />
                         ))}
                     </div>
                 </div>

@@ -1,10 +1,16 @@
 export interface ICardData {
-    id: string;
+    id: string | number;
     imgUrl: string;
     url?: string;
     title: string;
     time: string;
     author: string;
-    className?: string;
-    infoBlockClassName?: string;
+}
+
+export interface CardProps {
+    data: {
+        id: string;
+        title: string;
+        [key: string]: any;
+    };
 }
