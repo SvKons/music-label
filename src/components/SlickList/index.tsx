@@ -1,14 +1,14 @@
 import ButtonSeeAll from '../ButtonSeeAll';
 import './SlickList.scss';
 
-interface SlickListProps {
+interface ISlickListProps {
     title: string;
     data: Array<{ id: string; [key: string]: any }>;
     cardComponent: React.ComponentType<{ data: any }>;
     visibleCount?: number;
 }
 
-const SlickList: React.FC<SlickListProps> = ({ title, data, cardComponent: CardComponent, visibleCount = 4 }) => {
+const SlickList = ({ title, data, cardComponent: CardComponent, visibleCount = 4 }: ISlickListProps) => {
     return (
         <div className="slick-list">
             <div className="slick-list__top-wrap">

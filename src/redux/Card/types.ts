@@ -7,7 +7,7 @@ export interface ICardData {
     author: string;
 }
 
-export interface CardProps {
+export interface ICardProps {
     data: {
         id: string;
         title: string;

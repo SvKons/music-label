@@ -7,3 +7,14 @@ export interface IPlaylistSong {
     iconPlay?: string;
     iconLike?: string;
 }
+
+export interface IPlaylistData {
+    id: number;
+    imgUrl: string;
+    genre?: string;
+    time: string;
+    author: string;
+    iconImg?: string;
+    url?: string;
+    title: string;
+}

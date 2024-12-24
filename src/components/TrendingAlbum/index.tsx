@@ -3,7 +3,7 @@ import Button from '../Button';
 import './TrendingAlbum.scss';
 import Playlist from '../Playlists/Playlist';
 import { IPlaylistSong } from '../../redux/Playlist/types';
-import { PlaylistSong } from '../Playlists/Playlist/utils';
+import { playlistSong } from '../../assets/data/dataPlaylistSongs';
 
 export interface ITrendingAlbumProps {
     children: React.ReactNode;
@@ -13,7 +13,7 @@ export interface ITrendingAlbumProps {
 const TrendingAlbum = () => {
     return (
         <div className="trending-album">
-            <Playlist playlistData={PlaylistSong}>
+            <Playlist playlistData={playlistSong}>
                 <div className="trending-album__top-info">
                     <div className="trending-album__img-wrap">
                         <img src={require('./img/img-1.png')} alt="Лого альбома" className="trending-album__img" />

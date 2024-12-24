@@ -1,0 +1,51 @@
+.top-genres {
+    &__title {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &__block {
+        width: 23%;
+    }
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        border-radius: 30px;
+        background: linear-gradient(180deg, rgba(27, 28, 30, 0.8) 0%, rgba(27, 28, 30, 0.48) 100%);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 15px;
+        padding-left: 20px;
+    }
+
+    &__genre-link {
+        color: var(--white);
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3s ease-in;
+
+        &:hover {
+            color: var(--orange);
+        }
+    }
+
+    &__img {
+        border-radius: 30px;
+    }
+}

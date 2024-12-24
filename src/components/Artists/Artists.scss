@@ -5,15 +5,13 @@
 }
 
 .top-artists {
-    &__wrap {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-radius: 20px;
-        background: linear-gradient(90deg, #1b1c1e 0.27%, rgba(43, 69, 81, 0.4) 71.25%);
-        padding: 24px;
-        margin-bottom: 80px;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #1b1c1e 0.27%, rgba(43, 69, 81, 0.4) 71.25%);
+    padding: 24px;
+    margin-bottom: 80px;
 
     &__title {
         max-width: 400px;
@@ -29,50 +27,12 @@
         display: flex;
         flex-wrap: wrap;
     }
-
-    &__card {
-        position: relative;
-        max-width: 246px;
-        min-height: 300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 15px;
-        padding: 16px 16px;
-
-        &__image {
-            width: 236px;
-            height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        &__name {
-            font-size: 1.125rem;
-            margin: 10px 0 5px;
-
-            a {
-                text-decoration: none;
-                color: #fff;
-                font-weight: bold;
-
-                &:hover {
-                    color: #fd7e14;
-                }
-            }
-        }
-
-        &__label {
-            font-size: 0.875rem;
-            margin: 0;
-        }
-    }
 }
 
 .artists-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: 60px;
 
     &__item {

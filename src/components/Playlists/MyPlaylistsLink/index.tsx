@@ -3,11 +3,11 @@ import { motion, useInView } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { IMyPlaylists } from '../../../redux/MyPlaylists/types';
 
-interface MyPlaylistsLinkProps {
+interface IMyPlaylistsLinkProps {
     data: IMyPlaylists;
 }
 
-const MyPlaylistsLink = ({ data }: MyPlaylistsLinkProps) => {
+const MyPlaylistsLink = ({ data }: IMyPlaylistsLinkProps) => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
 

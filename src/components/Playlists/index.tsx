@@ -1,8 +1,8 @@
+import { playlistsData } from '../../assets/data/dataPlaylists';
+import { playlistSong } from '../../assets/data/dataPlaylistSongs';
 import Card from '../Card';
 import MyPlaylists from './MyPlaylists';
 import Playlist from './Playlist';
-import { playlistsData } from './utils';
-import { PlaylistSong } from './Playlist/utils';
 import './Playlists.scss';
 import { Link } from 'react-router-dom';
 
@@ -18,13 +18,13 @@ const Playlists = () => {
                                 <MyPlaylists />
                                 <div className="group-playlists__item group-playlists__plus">
                                     <Link to="#" className="group-playlists__link group-playlists__link_plus">
-                                        <img src={require('./img/plus.png')} className="group-playlists__icon"></img>
+                                        <img src={require('../../assets/img/plus.png')} className="group-playlists__icon"></img>
                                     </Link>
                                 </div>
                             </div>
                         </div>
                         <div className="added-playlist">
-                            <Playlist playlistData={PlaylistSong}>
+                            <Playlist playlistData={playlistSong}>
                                 <div className="added-playlist__top">
                                     <div className="added-playlist__tracks">
                                         <span className="added-playlist__name-playlist">Party Playlist</span>
@@ -32,7 +32,7 @@ const Playlists = () => {
                                     </div>
 
                                     <Link to="#" className="added-playlist__link">
-                                        <img src={require('./img/plus.png')} className="added-playlist__icon" alt="Plus Icon" />
+                                        <img src={require('../../assets/img/plus.png')} className="added-playlist__icon" alt="Plus Icon" />
                                     </Link>
                                 </div>
                             </Playlist>

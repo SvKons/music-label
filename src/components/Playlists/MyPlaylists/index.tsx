@@ -1,10 +1,10 @@
+import { myPlaylists } from '../../../assets/data/dataMyPlaylists';
 import MyPlaylistsLink from '../MyPlaylistsLink';
-import { MyPlaylists } from './utils';
 
 const MyPlaylist = () => {
     return (
         <>
-            {MyPlaylists.map((data, index) => {
+            {myPlaylists.map((data, index) => {
                 return <MyPlaylistsLink key={index} data={data} />;
             })}
         </>

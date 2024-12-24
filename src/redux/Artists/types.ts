@@ -1,5 +1,5 @@
 export interface IArtists {
-    id?: string | number;
+    id: string;
     url?: string;
     author?: string | number;
     title?: string;
@@ -7,7 +7,7 @@ export interface IArtists {
 }
 
 export interface IArtistsCard {
-    id?: string | number;
+    id: string;
     url?: string;
     author?: string | number;
     title?: string;

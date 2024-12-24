@@ -5,9 +5,9 @@ import SearchForm from '../SearchForm';
 import SearchFilter from '../SearchFilter';
 import './Releases.scss';
 import Card from '../Card';
-import { releasesList } from '../CardFeatured/utils';
 import CardFeatured from '../CardFeatured';
-import { cardList } from '../Card/utils';
+import { cardList } from '../../assets/data/dataCardList';
+import { releasesList } from '../../assets/data/releasesList';
 
 const Releases = () => {
     const ref = useRef(null);

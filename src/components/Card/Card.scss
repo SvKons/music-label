@@ -18,7 +18,6 @@
     &__item {
         position: relative;
         max-width: 243px;
-        min-height: 360px;
         display: flex;
         flex-direction: column;
         border-radius: 31px;
@@ -40,7 +39,7 @@
         width: 50px;
         top: 5px;
         right: 10px;
-        background-image: url(./img/like.png);
+        background-image: url(../../assets/img/like.png);
         background-repeat: no-repeat;
         background-size: cover;
         cursor: pointer;
