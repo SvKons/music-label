@@ -1,3 +1,4 @@
+import ButtonsArrow from '../ButtonsArrow';
 import ButtonSeeAll from '../ButtonSeeAll';
 import './SlickList.scss';
 
@@ -13,7 +14,10 @@ const SlickList = ({ title, data, cardComponent: CardComponent, visibleCount = 4
         <div className="slick-list">
             <div className="slick-list__top-wrap">
                 <h2 className="slick-list__title">{title}</h2>
-                <ButtonSeeAll />
+                <div className="slick-list__buttons-block">
+                    <ButtonSeeAll />
+                    <ButtonsArrow />
+                </div>
             </div>
             <div className="slick-list__songs-block">
                 {data.slice(0, visibleCount).map(item => (

@@ -2,13 +2,7 @@ import { Link } from 'react-router-dom';
 import Button from '../Button';
 import './TrendingAlbum.scss';
 import Playlist from '../Playlists/Playlist';
-import { IPlaylistSong } from '../../redux/Playlist/types';
 import { playlistSong } from '../../assets/data/dataPlaylistSongs';
-
-export interface ITrendingAlbumProps {
-    children: React.ReactNode;
-    playlistData: IPlaylistSong[];
-}
 
 const TrendingAlbum = () => {
     return (

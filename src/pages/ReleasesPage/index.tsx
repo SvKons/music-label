@@ -5,9 +5,9 @@ import Releases from '../../components/Releases';
 const ReleasesPage = () => {
     return (
         <div>
-            <Header></Header>
-            <Releases></Releases>
-            <Footer></Footer>
+            <Header />
+            <Releases />
+            <Footer />
         </div>
     );
 };

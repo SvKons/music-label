@@ -1,0 +1,11 @@
+.album-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding-top: 100px;
+    margin-bottom: 50px;
+
+    &__card-artist {
+        height: 100%;
+    }
+}

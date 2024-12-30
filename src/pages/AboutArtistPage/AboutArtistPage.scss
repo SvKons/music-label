@@ -1,0 +1,23 @@
+.card-artist {
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.artist-top {
+    &__title {
+        font-size: 2.5rem;
+        color: var(--white);
+        margin-bottom: 20px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 50px;
+    }
+
+    &__card-artist {
+        height: 100%;
+    }
+}

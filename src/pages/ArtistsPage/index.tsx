@@ -5,9 +5,9 @@ import Artists from '../../components/Artists';
 const ArtistsPage = () => {
     return (
         <div>
-            <Header></Header>
-            <Artists></Artists>
-            <Footer></Footer>
+            <Header />
+            <Artists />
+            <Footer />
         </div>
     );
 };

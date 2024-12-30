@@ -5,9 +5,9 @@ import Playlists from '../../components/Playlists';
 const PlaylistPage = () => {
     return (
         <div>
-            <Header></Header>
-            <Playlists></Playlists>
-            <Footer></Footer>
+            <Header />
+            <Playlists />
+            <Footer />
         </div>
     );
 };

@@ -1,0 +1,36 @@
+.arrow-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &__button {
+        font-size: 1rem;
+        font-weight: 600;
+        width: 47px;
+        height: 40px;
+        background-color: #1b1c1e;
+        color: #fafafa;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+
+        &__active {
+            background-color: #ff6b00;
+        }
+
+        &:hover {
+            background-color: #ff6b00;
+        }
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        fill: #fff;
+        margin-right: 5px;
+
+        &_left {
+            transform: scaleX(-1);
+        }
+    }
+}

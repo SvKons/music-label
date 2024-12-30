@@ -16,8 +16,8 @@
 }
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     margin-bottom: 60px;
 }
 

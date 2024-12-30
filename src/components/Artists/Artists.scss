@@ -30,9 +30,8 @@
 }
 
 .artists-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     margin-bottom: 60px;
 
     &__item {

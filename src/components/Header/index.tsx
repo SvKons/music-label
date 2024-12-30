@@ -13,12 +13,6 @@ const Header = () => {
                     <Link className="header__menu__span" to={'/'}>
                         <span>О нас</span>
                     </Link>
-                    <Link className="header__menu__span" to={'/news'}>
-                        <span>Новости</span>
-                    </Link>
-                    <Link className="header__menu__span" to={'/events'}>
-                        <span>События</span>
-                    </Link>
                     <Link className="header__menu__span" to={'/artists'}>
                         <span>Артисты</span>
                     </Link>
@@ -28,11 +22,11 @@ const Header = () => {
                     <Link className="header__menu__span" to={'/playlists'}>
                         <span>Плейлисты</span>
                     </Link>
-                    <Link className="header__menu__span" to={'/clips'}>
-                        <span>Клипы</span>
+                    <Link className="header__menu__span" to={'/about-album'}>
+                        <span>PRO Альбом</span>
                     </Link>
-                    <Link className="header__menu__span" to={'/demo'}>
-                        <span>Отправить демо</span>
+                    <Link className="header__menu__span" to={'/about-artist'}>
+                        <span>PRO Артиста</span>
                     </Link>
                 </div>
             </div>
